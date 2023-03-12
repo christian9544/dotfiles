@@ -6,8 +6,10 @@ require("catppuccin").setup({
   },
 });
 vim.cmd("colorscheme catppuccin")
+
 -- vim.cmd [[colorscheme nightfly]]
 
+local p = require('rose-pine.palette')
 require("rose-pine").setup({
   highlight_groups = {
 --    ["@comment"] = { fg = p.muted, italic = false },
