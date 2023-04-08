@@ -1,3 +1,16 @@
+vim.opt.signcolumn = 'yes'
+
+local lsp = require('lsp-zero').preset({
+  name = 'minimal',
+  set_lsp_keymaps = true,
+  manage_nvim_cmp = true,
+  suggest_lsp_servers = false,
+})
+
+-- (Optional) Configure lua language server for neovim
+-- lsp.nvim_workspace()
+
+lsp.setup()
 -- require'lspconfig'.rust-analyzer.setup{}
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -53,3 +66,23 @@ require('lspconfig')['rust_analyzer'].setup{
       ["rust-analyzer"] = {}
     }
 }
+require'lspconfig'.gopls.setup{}
+
+-- Perl Language Server
+-- cpan App::cpanminus
+-- cpanm PLS
+require'lspconfig'.perlpls.setup{}
+
+-- require'lspconfig'.perlnavigator.setup{
+--   cmd = {'node', '/home/christian/PerlNavigator/server/out/server.js', '--stdio'},
+--   settings = {
+--     perlnavigator = {
+--       perlPath = 'perl',
+--       enableWarnings = true,
+--       perltidyProfile = '',
+--       perlcriticProfile = '',
+--       perlcriticEnabled = true,
+--     }
+--   }
+-- }
+

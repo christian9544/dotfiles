@@ -1,11 +1,11 @@
 require("catppuccin").setup({
-  transparent_background = false,
+  transparent_background = true,
   no_italic = true,
   styles = {
     functions = { "bold" },
   },
 });
-vim.cmd("colorscheme catppuccin")
+-- vim.cmd("colorscheme catppuccin")
 
 -- vim.cmd [[colorscheme nightfly]]
 
@@ -18,12 +18,13 @@ require("rose-pine").setup({
 --    ["@tag.attribute"] = { italic = false },
     ["Function"] = { fg = p.rose, bold = true },
   },
---  disable_background = false,
+  disable_background = true,
 --  groups = {
 --    background = 'base'
 --  },
   disable_italics = true,
 });
+vim.cmd("colorscheme rose-pine-moon")
 
 
 local hl = function(thing, opts)
