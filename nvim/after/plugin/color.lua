@@ -5,7 +5,7 @@ require("catppuccin").setup({
     functions = { "bold" },
   },
 });
--- vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme catppuccin")
 
 -- vim.cmd [[colorscheme nightfly]]
 
@@ -24,7 +24,7 @@ require("rose-pine").setup({
 --  },
   disable_italics = true,
 });
-vim.cmd("colorscheme rose-pine-moon")
+--- vim.cmd("colorscheme rose-pine-moon")
 
 
 local hl = function(thing, opts)
