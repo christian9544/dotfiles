@@ -15,5 +15,5 @@ set colorcolumn=80
 
 colorscheme industry
 
-# for find
+" for find
 set path+=**
